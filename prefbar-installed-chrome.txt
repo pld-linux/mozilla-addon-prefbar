@@ -1,0 +1,2 @@
+content,install,url,jar:resource:/chrome/prefbar.jar!/content/prefbar/
+locale,install,url,jar:resource:/chrome/prefbar.jar!/locale/en-US/prefbar/
