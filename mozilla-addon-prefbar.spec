@@ -3,14 +3,14 @@ Summary(pl):	Pasek narzêdziowy szyblkiego dostêpu do najczê¶ciej u¿ywanych ustaw
 Name:		mozilla-addon-prefbar
 %define		_realname	prefbar
 Version:	1.0
-Release:	1
+Release:	2
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://xulplanet.com/downloads/applications/prefbar/%{_realname}.xpi
 Source1:	%{_realname}-installed-chrome.txt
 URL:		http://xulplanet.com/downloads/view.cgi?category=applications&view=prefbar
 BuildRequires:	unzip
-Requires:	mozilla >= 1.0
+Requires:	mozilla >= 1.0-7
 BuildRoot:	%{tmpdir}/%{_realname}-%{version}-root-%(id -u -n)
 
 %define		_prefix		/usr/X11R6
@@ -39,13 +39,11 @@ rm -rf $RPM_BUILD_ROOT
 
 %post
 cd %{_chromedir}
-cat %{_realname}-installed-chrome.txt >> installed-chrome.txt
+cat *-installed-chrome.txt >installed-chrome.txt
 
 %postun
 cd %{_chromedir}
-cat installed-chrome.txt | grep -v "%{_realname}" > installed-chrome.txt.tmp
-cat installed-chrome.txt.tmp > installed-chrome.txt
-rm -f installed-chrome.txt.tmp
+cat *-installed-chrome.txt >> installed-chrome.txt
 
 %files
 %defattr(644,root,root,755)
