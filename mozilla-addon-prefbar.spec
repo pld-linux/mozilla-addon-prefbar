@@ -1,5 +1,5 @@
 Summary:	Quick access toolbar for recently used preferences
-Summary(pl):	Pasek narzêdziowy szyblkiego dostêpu do najczê¶ciej u¿ywanych ustawieñ
+Summary(pl):	Pasek narzêdziowy szybkiego dostêpu do najczê¶ciej u¿ywanych ustawieñ
 Name:		mozilla-addon-prefbar
 %define		_realname	prefbar
 %define		_rc	rc3
