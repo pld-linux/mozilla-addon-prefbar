@@ -8,7 +8,7 @@ Release:	0.%{_rc}.3
 Epoch:		1
 License:	GPL
 Group:		X11/Applications/Networking
-Source0:	http://download.mozdev.org/%{_realname}/%{_realname}%{version}%{_rc}.xpi
+Source0:	http://download.mozdev.org/prefbar/%{_realname}%{version}%{_rc}.xpi
 # Source0-md5:	f6c93ce58408057417cf17cdb18bd59d
 Source1:	%{_realname}-installed-chrome.txt
 URL:		http://prefbar.mozdev.org/
@@ -17,7 +17,7 @@ Requires(post,postun):	mozilla >= 1.7.3-3
 Requires(post,postun):	textutils
 Requires:	mozilla >= 1.0-7
 BuildArch:	noarch
-BuildRoot:	%{tmpdir}/%{_realname}-%{version}-root-%(id -u -n)
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		_chromedir	%{_datadir}/mozilla/chrome
 
