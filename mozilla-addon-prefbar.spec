@@ -43,7 +43,7 @@ cat *-installed-chrome.txt >installed-chrome.txt
 
 %postun
 cd %{_chromedir}
-cat *-installed-chrome.txt >> installed-chrome.txt
+cat *-installed-chrome.txt >installed-chrome.txt
 
 %files
 %defattr(644,root,root,755)
