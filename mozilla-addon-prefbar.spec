@@ -5,6 +5,7 @@ Name:		mozilla-addon-prefbar
 %define		_rc	rc3
 Version:	2.3
 Release:	0.%{_rc}.3
+Epoch:		1
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://download.mozdev.org/%{_realname}/%{_realname}%{version}%{_rc}.xpi
