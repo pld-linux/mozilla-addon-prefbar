@@ -7,8 +7,8 @@ Version:	2.3
 Release:	0.%{_rc}.2
 License:	GPL
 Group:		X11/Applications/Networking
-Source0:	http://download.mozdev.org/%{_realname}/%{_realname}%{version}.xpi
-# Source0-md5:	1fa404216bc3fdfb00baac400de7fa4a
+Source0:	http://download.mozdev.org/%{_realname}/%{_realname}%{version}%{_rc}.xpi
+# Source0-md5:	f6c93ce58408057417cf17cdb18bd59d
 Source1:	%{_realname}-installed-chrome.txt
 URL:		http://prefbar.mozdev.org/
 BuildRequires:	unzip
