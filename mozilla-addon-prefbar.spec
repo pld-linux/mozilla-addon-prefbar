@@ -6,7 +6,7 @@ Version:	1.0
 Release:	2
 License:	GPL
 Group:		X11/Applications/Networking
-Source0:	http://xulplanet.com/downloads/applications/prefbar/%{_realname}.xpi
+Source0:	http://xulplanet.com/downloads/prefbar/%{_realname}.xpi
 # Source0-md5:	1618a213ca00864ad75b5fc047a904b2
 Source1:	%{_realname}-installed-chrome.txt
 URL:		http://xulplanet.com/downloads/view.cgi?category=applications&view=prefbar
