@@ -2,14 +2,14 @@ Summary:	Quick access toolbar for recently used preferences
 Summary(pl):	Pasek narzêdziowy szyblkiego dostêpu do najczê¶ciej u¿ywanych ustawieñ
 Name:		mozilla-addon-prefbar
 %define		_realname	prefbar
-Version:	1.0
-Release:	2
+Version:	2.3rc1
+Release:	1
 License:	GPL
 Group:		X11/Applications/Networking
-Source0:	http://xulplanet.com/downloads/prefbar/%{_realname}.xpi
-# Source0-md5:	80d41179248ef31d2d012b26d6aabda3
+Source0:	http://download.mozdev.org/%{_realname}/%{_realname}%{version}.xpi
+# Source0-md5:	a2959bfb7f5a55d62fa625e15b6fed52
 Source1:	%{_realname}-installed-chrome.txt
-URL:		http://xulplanet.com/downloads/view.cgi?category=applications&view=prefbar
+URL:		http://prefbar.mozdev.org/
 BuildRequires:	unzip
 Requires(post,postun):	textutils
 Requires:	mozilla >= 1.0-7
@@ -35,6 +35,8 @@ install -d $RPM_BUILD_ROOT%{_chromedir}
 
 unzip %{SOURCE0} -d $RPM_BUILD_ROOT%{_chromedir}
 install %{SOURCE1} $RPM_BUILD_ROOT%{_chromedir}
+
+mv $RPM_BUILD_ROOT%{_chromedir}/chrome/%{_realname}.jar $RPM_BUILD_ROOT%{_chromedir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
