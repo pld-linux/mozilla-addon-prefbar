@@ -2,12 +2,13 @@ Summary:	Quick access toolbar for recently used preferences
 Summary(pl):	Pasek narzêdziowy szyblkiego dostêpu do najczê¶ciej u¿ywanych ustawieñ
 Name:		mozilla-addon-prefbar
 %define		_realname	prefbar
-Version:	2.3rc1
-Release:	2
+%define		_rc	rc3
+Version:	2.3
+Release:	0.%{_rc}.2
 License:	GPL
 Group:		X11/Applications/Networking
 Source0:	http://download.mozdev.org/%{_realname}/%{_realname}%{version}.xpi
-# Source0-md5:	a2959bfb7f5a55d62fa625e15b6fed52
+# Source0-md5:	1fa404216bc3fdfb00baac400de7fa4a
 Source1:	%{_realname}-installed-chrome.txt
 URL:		http://prefbar.mozdev.org/
 BuildRequires:	unzip
