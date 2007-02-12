@@ -1,5 +1,5 @@
 Summary:	Quick access toolbar for recently used preferences
-Summary(pl):	Pasek narzêdziowy szybkiego dostêpu do najczê¶ciej u¿ywanych ustawieñ
+Summary(pl.UTF-8):   Pasek narzÄ™dziowy szybkiego dostÄ™pu do najczÄ™Å›ciej uÅ¼ywanych ustawieÅ„
 Name:		mozilla-addon-prefbar
 %define		_realname	prefbar
 %define		_rc	rc3
@@ -25,9 +25,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Quick access toolbar for recently used items: showing images, setting
 up proxy, enabling Java and JavaScript etc.
 
-%description -l pl
-Pasek narzêdziowy szybkiego dostêpu do najczê¶ciej u¿ywanych ustawieñ
-tj. pokazywanie obrazków, korzystanie z proxy, w³±czanie Java i JS 
+%description -l pl.UTF-8
+Pasek narzÄ™dziowy szybkiego dostÄ™pu do najczÄ™Å›ciej uÅ¼ywanych ustawieÅ„
+tj. pokazywanie obrazkÃ³w, korzystanie z proxy, wÅ‚Ä…czanie Java i JS 
 itd.
 
 %prep
